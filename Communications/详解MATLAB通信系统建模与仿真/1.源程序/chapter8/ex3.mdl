@@ -1,0 +1,1063 @@
+Model {
+  Name			  "ex3"
+  Version		  6.3
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.16"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "ibm-1386_P100-2002"
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Tue Aug 31 18:44:41 2010"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "lxy"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Fri Apr 22 16:50:09 2011"
+  ModelVersionFormat	  "1.%<AutoIncrement:16>"
+  ConfigurationManager	  "None"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  StrictBusMsg		  "None"
+  ProdHWDeviceType	  "32-bit Generic"
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      1
+      Version		      "1.1.0"
+      Array {
+	Type			"Handle"
+	Dimension		7
+	Simulink.SolverCC {
+	  $ObjectID		  2
+	  Version		  "1.1.0"
+	  StartTime		  "0.0"
+	  StopTime		  "10"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  Solver		  "VariableStepDiscrete"
+	  SolverName		  "VariableStepDiscrete"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  RateTranMode		  "Deterministic"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  3
+	  Version		  "1.1.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveFormat		  "Array"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  4
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    5
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "InitFltsAndDblsToZero"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    PropName		    "DisabledProps"
+	  }
+	  Version		  "1.1.0"
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  InlineInvariantSignals  on
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnforceIntegerDowncast  on
+	  ExpressionFolding	  on
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  ParameterPooling	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  on
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  BufferReusableBoundary  on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  5
+	  Version		  "1.1.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  CheckSSInitialOutputMsg on
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "TryResolveAllWithWarning"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "warning"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  ModelReferenceSimTargetVerbose off
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  6
+	  Version		  "1.1.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  7
+	  Version		  "1.1.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  8
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    "IncludeHyperlinkInReport"
+	    PropName		    "DisabledProps"
+	  }
+	  Version		  "1.1.0"
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      9
+	      Array {
+		Type			"Cell"
+		Dimension		9
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"InsertBlockDesc"
+		Cell			"SFDataObjDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		PropName		"DisabledProps"
+	      }
+	      Version		      "1.1.0"
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      IncDataTypeInIds	      off
+	      PrefixModelToSubsysFcnNames on
+	      CustomSymbolStr	      "$R$N$M"
+	      MangleLength	      1
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      SimulinkBlockComments   on
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      10
+	      Array {
+		Type			"Cell"
+		Dimension		12
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportNonFinite"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		PropName		"DisabledProps"
+	      }
+	      Version		      "1.1.0"
+	      TargetFcnLib	      "ansi_tfl_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      GenFloatMathFcnCalls    "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      IncludeMdlTerminateFcn  on
+	      CombineOutputUpdateFcns off
+	      SuppressErrorStatus     off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      SimulationMode	      "normal"
+      CurrentDlgPage	      "Solver"
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    1
+  }
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      CombinatorialLogic
+      TruthTable	      "[0 0;0 1;0 1;1 0;0 1;1 0;1 0;1 1]"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "sfix(16)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "2^0"
+      SampleTime	      "inf"
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      OutDataTypeMode	      "Inherit via back propagation"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      ConvertRealWorld	      "Real World Value (RWV)"
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      FrameConversion
+      OutFrame		      "Frame based"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ParameterDataTypeMode   "Same as input"
+      ParameterDataType	      "sfix(16)"
+      ParameterScalingMode    "Best Precision: Matrix-wise"
+      ParameterScaling	      "2^0"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Ground
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchByCopyingInsideSignal off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      RelationalOperator
+      Operator		      ">="
+      InputSameDT	      on
+      LogicOutDataTypeMode    "Logical (see Configuration Parameters: Optimiza"
+"tion)"
+      LogicDataType	      "uint(8)"
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Selector
+      InputType		      "Vector"
+      IndexMode		      "One-based"
+      ElementSrc	      "Internal"
+      Elements		      "1"
+      RowSrc		      "Internal"
+      Rows		      "1"
+      ColumnSrc		      "Internal"
+      Columns		      "1"
+      InputPortWidth	      "-1"
+      IndexIsStartValue	      off
+      OutputPortSize	      "1"
+    }
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "ex3"
+    Location		    [108, 82, 626, 366]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Reference
+      Name		      "AWGN\nChannel"
+      Ports		      [1, 1]
+      Position		      [90, 204, 170, 246]
+      SourceBlock	      "commchan3/AWGN\nChannel"
+      SourceType	      "AWGN Channel"
+      ShowPortLabels	      on
+      seed		      "12345"
+      noiseMode		      "Signal to noise ratio  (Eb/No)"
+      EbNodB		      "SNR"
+      EsNodB		      "10"
+      SNRdB		      "10"
+      bitsPerSym	      "2"
+      Ps		      "1"
+      Tsym		      "1/SymbolRate"
+      variance		      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "AWGN\nChannel1"
+      Ports		      [1, 1]
+      Position		      [90, 114, 170, 156]
+      SourceBlock	      "commchan3/AWGN\nChannel"
+      SourceType	      "AWGN Channel"
+      ShowPortLabels	      on
+      seed		      "12345"
+      noiseMode		      "Signal to noise ratio  (Eb/No)"
+      EbNodB		      "SNR"
+      EsNodB		      "10"
+      SNRdB		      "10"
+      bitsPerSym	      "2"
+      Ps		      "1"
+      Tsym		      "1/SymbolRate"
+      variance		      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Error Rate\nCalculation"
+      Ports		      [2]
+      Position		      [320, 56, 395, 109]
+      SourceBlock	      "commsink2/Error Rate\nCalculation"
+      SourceType	      "Error Rate Calculation"
+      N			      "8"
+      st_delay		      "0"
+      cp_mode		      "Entire frame"
+      subframe		      "[]"
+      PMode		      "Workspace"
+      WsName		      "BER2"
+      RsMode2		      off
+      stop		      off
+      numErr		      "100"
+      maxBits		      "1e6"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Error Rate\nCalculation1"
+      Ports		      [2]
+      Position		      [430, 16, 505, 69]
+      SourceBlock	      "commsink2/Error Rate\nCalculation"
+      SourceType	      "Error Rate Calculation"
+      N			      "0"
+      st_delay		      "0"
+      cp_mode		      "Entire frame"
+      subframe		      "[]"
+      PMode		      "Workspace"
+      WsName		      "BER1"
+      RsMode2		      off
+      stop		      off
+      numErr		      "100"
+      maxBits		      "1e6"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Rx"
+      Ports		      [2, 2]
+      Position		      [195, 123, 285, 232]
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      MaskHideContents	      off
+      System {
+	Name			"Rx"
+	Location		[546, 320, 1039, 563]
+	Open			on
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Code"
+	  Position		  [25, 48, 55, 62]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Uncode"
+	  Position		  [30, 148, 60, 162]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Buffer1"
+	  Ports			  [1, 1]
+	  Position		  [275, 29, 310, 81]
+	  SourceBlock		  "dspbuff3/Buffer"
+	  SourceType		  "Buffer"
+	  N			  "7"
+	  V			  "0"
+	  ic			  "4"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Delay"
+	  Ports			  [1, 1]
+	  Position		  [220, 37, 255, 73]
+	  SourceBlock		  "dspsigops/Delay"
+	  SourceType		  "Delay"
+	  dly_unit		  "Samples"
+	  delay			  "5"
+	  ic_detail		  off
+	  dif_ic_for_ch		  off
+	  dif_ic_for_dly	  off
+	  ic			  "0"
+	  reset_popup		  "None"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Hamming Decoder"
+	  Ports			  [1, 1]
+	  Position		  [345, 33, 425, 77]
+	  SourceBlock		  "commblkcod2/Hamming Decoder"
+	  SourceType		  "Hamming Decoder"
+	  ShowPortLabels	  on
+	  n			  "7"
+	  k			  "gfprimfd(3,'min')"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "QPSK\nDemodulator\nBaseband"
+	  Ports			  [1, 1]
+	  Position		  [80, 30, 135, 80]
+	  SourceBlock		  "commdigbbndpm2/QPSK\nDemodulator\nBaseband"
+	  SourceType		  "QPSK Demodulator Baseband"
+	  ShowPortLabels	  on
+	  OutType		  "Bit"
+	  Dec			  "Gray"
+	  Ph			  "pi/4"
+	  numSamp		  "1"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "QPSK\nDemodulator\nBaseband1"
+	  Ports			  [1, 1]
+	  Position		  [135, 130, 210, 180]
+	  SourceBlock		  "commdigbbndpm2/QPSK\nDemodulator\nBaseband"
+	  SourceType		  "QPSK Demodulator Baseband"
+	  ShowPortLabels	  on
+	  OutType		  "Bit"
+	  Dec			  "Gray"
+	  Ph			  "pi/4"
+	  numSamp		  "1"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Unbuffer"
+	  Ports			  [1, 1]
+	  Position		  [160, 31, 195, 79]
+	  SourceBlock		  "dspbuff3/Unbuffer"
+	  SourceType		  "Unbuffer"
+	  ic			  "0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Code1"
+	  Position		  [450, 48, 480, 62]
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Uncode1"
+	  Position		  [235, 148, 265, 162]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Line {
+	  SrcBlock		  "Hamming Decoder"
+	  SrcPort		  1
+	  DstBlock		  "Code1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Code"
+	  SrcPort		  1
+	  DstBlock		  "QPSK\nDemodulator\nBaseband"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Uncode"
+	  SrcPort		  1
+	  DstBlock		  "QPSK\nDemodulator\nBaseband1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "QPSK\nDemodulator\nBaseband1"
+	  SrcPort		  1
+	  DstBlock		  "Uncode1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "QPSK\nDemodulator\nBaseband"
+	  SrcPort		  1
+	  DstBlock		  "Unbuffer"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Unbuffer"
+	  SrcPort		  1
+	  DstBlock		  "Delay"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Delay"
+	  SrcPort		  1
+	  DstBlock		  "Buffer1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Buffer1"
+	  SrcPort		  1
+	  DstBlock		  "Hamming Decoder"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Tx"
+      Ports		      [0, 3]
+      Position		      [15, 104, 55, 166]
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      MaskHideContents	      off
+      System {
+	Name			"Tx"
+	Location		[135, 82, 647, 413]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Reference
+	  Name			  "Bernoulli Binary\nGenerator"
+	  Ports			  [0, 1]
+	  Position		  [20, 103, 100, 147]
+	  FontName		  "Arial"
+	  SourceBlock		  "commrandsrc2/Bernoulli Binary\nGenerator"
+	  SourceType		  "Bernoulli Binary Generator"
+	  ShowPortLabels	  on
+	  P			  "0.5"
+	  seed			  "61"
+	  Ts			  "1/(2*SymbolRate)"
+	  frameBased		  on
+	  sampPerFrame		  "4"
+	  orient		  off
+	  outDataType		  "double"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Buffer"
+	  Ports			  [1, 1]
+	  Position		  [260, 100, 310, 150]
+	  SourceBlock		  "dspbuff3/Buffer"
+	  SourceType		  "Buffer"
+	  N			  "2"
+	  V			  "0"
+	  ic			  "0"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Hamming Encoder"
+	  Ports			  [1, 1]
+	  Position		  [140, 103, 220, 147]
+	  SourceBlock		  "commblkcod2/Hamming Encoder"
+	  SourceType		  "Hamming Encoder"
+	  ShowPortLabels	  on
+	  n			  "7"
+	  k			  "gfprimfd(3,'min')"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "QPSK\nModulator\nBaseband"
+	  Ports			  [1, 1]
+	  Position		  [350, 101, 425, 149]
+	  SourceBlock		  "commdigbbndpm2/QPSK\nModulator\nBaseband"
+	  SourceType		  "QPSK Modulator Baseband"
+	  ShowPortLabels	  on
+	  InType		  "Bit"
+	  Enc			  "Gray"
+	  Ph			  "pi/4"
+	  numSamp		  "1"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "QPSK\nModulator\nBaseband1"
+	  Ports			  [1, 1]
+	  Position		  [350, 191, 425, 239]
+	  SourceBlock		  "commdigbbndpm2/QPSK\nModulator\nBaseband"
+	  SourceType		  "QPSK Modulator Baseband"
+	  ShowPortLabels	  on
+	  InType		  "Bit"
+	  Enc			  "Gray"
+	  Ph			  "pi/4"
+	  numSamp		  "1"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "msg"
+	  Position		  [450, 38, 480, 52]
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Code"
+	  Position		  [445, 118, 475, 132]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Uncode"
+	  Position		  [450, 208, 480, 222]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Line {
+	  SrcBlock		  "Buffer"
+	  SrcPort		  1
+	  DstBlock		  "QPSK\nModulator\nBaseband"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "QPSK\nModulator\nBaseband"
+	  SrcPort		  1
+	  DstBlock		  "Code"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "QPSK\nModulator\nBaseband1"
+	  SrcPort		  1
+	  DstBlock		  "Uncode"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Bernoulli Binary\nGenerator"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  Branch {
+	    DstBlock		    "Hamming Encoder"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -80]
+	    DstBlock		    "msg"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 90]
+	    DstBlock		    "QPSK\nModulator\nBaseband1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Hamming Encoder"
+	  SrcPort		  1
+	  DstBlock		  "Buffer"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Tx"
+      SrcPort		      2
+      DstBlock		      "AWGN\nChannel1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Tx"
+      SrcPort		      3
+      Points		      [0, 70]
+      DstBlock		      "AWGN\nChannel"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "AWGN\nChannel"
+      SrcPort		      1
+      Points		      [5, 0]
+      DstBlock		      "Rx"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "AWGN\nChannel1"
+      SrcPort		      1
+      Points		      [5, 0]
+      DstBlock		      "Rx"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Tx"
+      SrcPort		      1
+      Points		      [5, 0; 0, -45]
+      Branch {
+	DstBlock		"Error Rate\nCalculation"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -40]
+	DstBlock		"Error Rate\nCalculation1"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Rx"
+      SrcPort		      1
+      Points		      [10, 0; 0, -55]
+      DstBlock		      "Error Rate\nCalculation"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Rx"
+      SrcPort		      2
+      Points		      [120, 0; 0, -150]
+      DstBlock		      "Error Rate\nCalculation1"
+      DstPort		      2
+    }
+  }
+}
