@@ -1,0 +1,10 @@
+function [x,lam]=qlag(H,A,b,c)
+% 功能: 用拉格朗日方法求解等式约束二次规划:  
+%           min f(x)=0.5*x'Hx+c'x, s.t. Ax=b
+%输入: H, c 分别是目标函数的矩阵和向量, A, b分别是
+%         约束条件中的矩阵和向量
+%输出:  (x, lam) 是 KT 点.
+IH=inv(H);  AHA=A*IHA';  I
+
+x=x0;
+val=feval(fun,x); 
